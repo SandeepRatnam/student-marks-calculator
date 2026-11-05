@@ -1,5 +1,5 @@
 
-from calculator import add, multiply
+from calculator import add, multiply, subtract
 
 
 def test_add():
@@ -12,3 +12,6 @@ def test_multiply():
 
 def test_add_with_negative_number():
     assert add(-5, 10) == 5
+    
+def test_subtract():
+    assert subtract(20, 10) == 10
